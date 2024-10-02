@@ -26,20 +26,23 @@
         display: flex;
         justify-content: space-around;
 
+        &__text {
+            color: variables.$secondaryText;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 6px;
+        }
+
         &__content {
-            &__text {
-                display: block;
-                color: variables.$secondaryText;
-                font-size: 18px;
-                font-weight: bold;
-                margin-bottom: 6px;
-            }
+            display: flex;
+            align-items: center;
 
             &__input {
-                padding: 0px 100px;
+                max-height: 25px;
                 width: 100%;
                 border-radius: 5px;
                 color: variables.$secondaryText;
+                margin-right: 40px;
             }
         }
     }
@@ -59,7 +62,12 @@
             display: block;
 
             &__content {
-                margin-bottom: 24px;
+                display: block;
+                margin-top: 8px;
+
+                &__input {
+                    margin-bottom: 8px;
+                }
             }
         }
     }
