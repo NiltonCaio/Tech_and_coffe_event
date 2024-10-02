@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech and Coffe</title>
-    <link rel="stylesheet" href="styles/main.scss">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="hero">
@@ -16,10 +17,80 @@
             <P class="hero__text">
                 Let's relax and talk about our daily lives. The event starts at 10d 12h 20m 15s
             </P>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localization</b>
+                        47 W 13th St, New York, NY 10011, USA
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Price</b>
+                        for $120,00
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>When?</b>
+                        12/12/2022 at 7pm
+                    </li>
+                </ul>
+                <div class="infos-bar__email">
+                    <div class="infos-bar__email__content">
+                        <label class="infos-bar__email__content__text" for="email">Confirm your email</label>
+                        <input class="infos-bar__email__content__input" type="email" required>
+                    </div>
+                    <a href="#" class="button button--primary">
+                        Send and ensure
+                    </a>
+                </div>
+            </div>
         </div>
     </header>
 
+    <section class="event event--your-life-time">
+        <div class="container" data-aos="fade-up-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Your Life Time</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A, modi nesciunt omnis sunt cumque rem, incidunt eligendi laborum, expedita iste aliquid natus quod? Eum, ad nulla autem doloribus tempora error.
+                </p>
+            </div>
+            <img class="event__image" src="./images/Your_life_time.jpg" alt="Your Life Time">
+        </div>
+    </section>
+    <section class="event event--setup-configuration event--image-left">
+        <div class="container" data-aos="fade-up-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Setup Configuration</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A, modi nesciunt omnis sunt cumque rem, incidunt eligendi laborum, expedita iste aliquid natus quod? Eum, ad nulla autem doloribus tempora error.
+                </p>
+            </div>
+            <img class="event__image" src="./images/Setup_configuration.jpg" alt="Setup Configuration">
+        </div>
+    </section>
+    <section class="event event--jobs-and-oportunitys">
+        <div class="container" data-aos="fade-up-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Jobs And Oportunitys</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A, modi nesciunt omnis sunt cumque rem, incidunt eligendi laborum, expedita iste aliquid natus quod? Eum, ad nulla autem doloribus tempora error.
+                </p>
+            </div>
+            <img class="event__image" src="./images/Jobs_and_opportunitys.jpg" alt="Jobs And Oportunitys">
+        </div>
+    </section>
+    <section class="event event--technology-evolution event--image-left">
+        <div class="container" data-aos="fade-up-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Technology Evolution</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A, modi nesciunt omnis sunt cumque rem, incidunt eligendi laborum, expedita iste aliquid natus quod? Eum, ad nulla autem doloribus tempora error.
+                </p>
+            </div>
+            <img class="event__image" src="./images/Technology_evolution.jpg" alt="Technology Evolution">
+        </div>
+    </section>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>

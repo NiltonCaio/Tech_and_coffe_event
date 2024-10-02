@@ -1,0 +1,66 @@
+@use '../variables';
+
+.infos-bar {
+    padding: 16px 24px;
+    background-color: variables.$colorText;
+
+    &__infos {
+        display: flex;
+        justify-content: space-around;
+        gap: 40px;
+
+        &__item {
+            font-size: 14px;
+            color: variables.$secondaryText;
+
+            b {
+                color: variables.$secondaryText;
+                font-size: 18px;
+                display: block;
+            }
+        }
+    }
+
+    &__email {
+        margin-top: 24px;
+        display: flex;
+        justify-content: space-around;
+
+        &__content {
+            &__text {
+                display: block;
+                color: variables.$secondaryText;
+                font-size: 18px;
+                font-weight: bold;
+                margin-bottom: 6px;
+            }
+
+            &__input {
+                padding: 0px 100px;
+                width: 100%;
+                border-radius: 5px;
+                color: variables.$secondaryText;
+            }
+        }
+    }
+
+    @media (max-width:640px) {
+        display: block;
+
+        &__infos  {
+            display: block;
+
+            &__item {
+                margin-bottom: 24px;
+            }
+        }
+
+        &__email {
+            display: block;
+
+            &__content {
+                margin-bottom: 24px;
+            }
+        }
+    }
+}
